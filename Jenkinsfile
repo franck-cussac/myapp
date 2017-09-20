@@ -13,10 +13,7 @@ final	String	ANSIBLE_JOB_NAME	= 	''
 
 stage ("\u2600 Checkout Sources")
         {
-            node ('linux')
-                    {
-                        git branch: BRANCH_NAME, url: GIT_LINK
-                    }
+              git branch: BRANCH_NAME, url: GIT_LINK
         }
 
 stage ("\u2600 Build/Compile")
@@ -25,12 +22,6 @@ stage ("\u2600 Build/Compile")
         }
 
 stage ("\u2600 Run Technical Tests (Unit Tests)")
-        {
-            
-        }
-
-// nécessite la création d'un profil sonar avec la définition des propriétés servant au bon fonctionnement de sonar. Voir Alexis Kinsella pour plus d'info
-stage ("\u2600 Run Code Source Analysis")
         {
             
         }
