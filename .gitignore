@@ -73,8 +73,8 @@ Debug.win32/
 *.iml
 
 # projet non utilisés
-cocos2d/*
-proj.android-studio/*
-proj.ios_mac/*
-proj.tizen/*
-proj.linux/*
+*/cocos2d/*
+*/proj.android-studio/*
+*/proj.ios_mac/*
+*/proj.tizen/*
+*/proj.linux/*
