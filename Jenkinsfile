@@ -25,6 +25,7 @@ stage ("\u2600 Build/Compile")
                 {
                         dir(DIRECTORY)
                         {
+                                sh "echo $PATH"
                                 sh "cocos compile -p android"
                         }
                         stash name: 'source'
