@@ -55,7 +55,7 @@ out/
 Debug.win32/
 *.opendb
 *.db
-*.vcxproj
+*.vcxproj*
 
 # backup files
 *.bak
