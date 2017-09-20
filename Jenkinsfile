@@ -13,7 +13,10 @@ final	String	ANSIBLE_JOB_NAME	= 	''
 
 stage ("\u2600 Checkout Sources")
         {
-              git branch: BRANCH_NAME, url: GIT_LINK
+                node('master')
+                {
+                        git branch: BRANCH_NAME, url: GIT_LINK
+                }
         }
 
 stage ("\u2600 Build/Compile")
