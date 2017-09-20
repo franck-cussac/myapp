@@ -21,7 +21,14 @@ stage ("\u2600 Checkout Sources")
 
 stage ("\u2600 Build/Compile")
         {
-            
+                node('master')
+                {
+                        dir(DIRECTORY)
+                        {
+                                sh "cocos compile -p android"
+                        }
+                        stash name: 'source'
+                }
         }
 
 stage ("\u2600 Run Technical Tests (Unit Tests)")
