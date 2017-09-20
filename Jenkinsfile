@@ -32,8 +32,5 @@ stage ("\u2600 Archive/Install Artifacts (Nexus)")
         }
 stage ("\u2600 Deployment to Dev Env")
         {
-            node ('linux')
-                    {
-                      
-                    }
+                
         }
